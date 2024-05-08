@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizApp</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <h1>Simple Quiz</h1>
+      <div class="startmenu">
+        <label for="categories">Category : </label>
+        <select name="" id="categories">
+          <option value="Linux">Linux</option>
+          <option value="DevOps">DevOps</option>
+          <option value="SQL" selected>SQL</option>
+          <option value="Docker">Docker</option>
+          <!-- Hello how are you what are you doing is everything OK OK goodbye -->
+        </select>
+        <label for="limit">Total Questions : </label>
+        <input id="limit" value="5" type="number" max="20" min="5" spellcheck="false">
+        <label for="diffculty">Level : </label>
+        <select name="" id="diffculty">
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <button id="start">Start Quiz</button>
+      </div>
+      <div id="result"></div>
+      <div class="quiz">
+        
+      </div>
+      <div id="next">
+        <button id="previous-btn">Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn">Submit</button>
+        <button id="new-quiz">New Quiz</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

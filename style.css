@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins" sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #001e4d;
+}
+.container{
+    position: absolute;
+    width: 70%;
+    background-color: rgb(223, 223, 223);
+    /* height: 400px; */
+    max-width: 900px;
+    top: 15%;
+    left: 15%;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 300px;
+    max-height: 1000dvh;
+    
+
+}
+.container h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    /* color: white; */
+    text-align: center;
+    padding-top: 10px;
+}
+.quiz{
+    padding: 20px 0; 
+}
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 700;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+    height: auto;
+    /* font-weight: bolder; */
+}
+#next{
+    width: 100%;
+    /* background-color: #695353; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-bottom: 10px; */
+}
+#next-btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #001e4d;
+    color: #fff;
+    transition: all 0.5s;
+    /* position: relative; */
+    /* left: 50%; */
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+   
+}
+#next-btn:hover{
+    
+    background: cadetblue;
+    color: black;
+    font-weight: bold;
+}
+#previous-btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #001e4d;
+    color: #fff;
+    transition: all 0.5s;
+    /* position: relative; */
+    /* left: 50%; */
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+    /* color: rgba(238, 9, 9, 0.781); */
+}
+#previous-btn:hover{
+    
+    background: cadetblue;
+    color: black;
+    font-weight: bold;
+}
+#submit-btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #09c437;
+    color: #000000;
+    transition: all 0.5s;
+    /* position: relative; */
+    /* left: 50%; */
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+.trueAnswer{
+    background: #12a8a1;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+    height: auto; 
+}
+.wrongAnswer{
+    background: #ec0a30;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+    height: auto; 
+}
+#result{
+    display: none;
+    width: 90%;
+    padding: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+#new-quiz{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #023e9e;
+    color: #fff;
+    transition: all 0.5s;
+    /* position: relative; */
+    /* left: 50%; */
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+.startmenu{
+    width: 100%;
+    /* background-color: #362b2b; */
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px auto 10px;
+    flex-wrap: wrap;
+    min-width: 50%;
+    gap: 20px;
+}
+#categories{
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: brown;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+option{
+    border-radius: 30px;
+    /* background-color: brown; */
+}
+#limit{
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: brown;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+#start{
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #047e18;
+}
+#diffculty{
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: brown;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
