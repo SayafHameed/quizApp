@@ -32,10 +32,12 @@ async function startquiz(){
     currentquestionNo=0;
     score=0;
     questionNo=1;
+    document.querySelector("#loader").style.display="block"
     // console.log(`${category.value},${level.value},${limit.value}`);
     url=url+`&category=${category.value}&difficulty=${level.value}&limit=${limit.value}`
     let response= await fetch(url);
     data=await response.json();
+    document.querySelector("#loader").style.display="none"
     // console.log(data);
     // console.log(limit.value);
     if(limit.value==1){
